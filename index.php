@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat:900%7CRoboto:300&display=swap&subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(  ); ?>/style.css">
 
   <meta name="description" content="PizzaTime — пицца в Москве от итальянского повара">
   <meta name="keywords" content="пицца">
@@ -15,23 +15,29 @@
   <meta property="og:description" content="PizzaTime — пицца в Москве от итальянского повара" />
   <meta property="og:image" content="img/section-top/bg.jpg" />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(  ); ?>/assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri(  ); ?>/assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri(  ); ?>/assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="<?php echo get_template_directory_uri(  ); ?>/assets/img/favicon/site.webmanifest">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
   <title>PizzaTime — пицца в Москве от итальянского повара</title>
+
+  <script>
+    var WPJS = {};
+    WPJS.siteUrl = '<?php echo get_template_directory_uri(  ); ?>';
+  </script>
 </head>
 <body>
+
 
 <!-- header-page -->
 <header class="header-page">
   <div class="container header-page__container">
     <div class="header-page__start">
       <div class="logo">
-        <img class="logo__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="img/common/logo.svg" alt="" width="127" height="21">
+        <img class="logo__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="<?php echo get_template_directory_uri(  ); ?>/assets/img/common/logo.svg" alt="" width="127" height="21">
       </div>
     </div>
     <div class="header-page__end">
@@ -71,7 +77,7 @@
 
 
 <!-- section-top -->
-<section class="section-top lazy" data-src="img/section-top/bg.webp" data-src-replace-webp="img/section-top/bg.jpg">
+<section class="section-top lazy" data-src="<?php echo get_template_directory_uri(  ); ?>/assets/img/section-top/bg.webp" data-src-replace-webp="img/section-top/bg.jpg">
   <div class="container section-top__container">
     <p class="section-top__info">от итальянского повара</p>
     <h1 class="section-top__title">Лучшая пицца в Москве</h1>
@@ -109,8 +115,8 @@
       <div class="catalog__item" data-category="mushrooms">
         <div class="product catalog__product">
           <picture>
-            <source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="img/section-catalog/1.webp">
-            <img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="img/section-catalog/1.png" alt="">
+            <source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="<?php echo get_template_directory_uri(  ); ?>/assets/img/section-catalog/1.webp">
+            <img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="<?php echo get_template_directory_uri(  ); ?>/assets/img/section-catalog/1.png" alt="">
           </picture>
           <div class="product__content">
             <h3 class="product__title">Салями</h3>
@@ -135,8 +141,8 @@
       <div class="catalog__item" data-category="meat">
         <div class="product catalog__product">
           <picture>
-            <source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="img/section-catalog/2.webp">
-            <img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="img/section-catalog/2.png" alt="">
+            <source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="<?php echo get_template_directory_uri(  ); ?>/assets/img/section-catalog/2.webp">
+            <img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="<?php echo get_template_directory_uri(  ); ?>/assets/img/section-catalog/2.png" alt="">
           </picture>
           <div class="product__content">
             <h3 class="product__title">Хит</h3>
@@ -163,8 +169,8 @@
       <div class="catalog__item" data-category="cheese">
         <div class="product catalog__product">
           <picture>
-            <source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="img/section-catalog/3.webp">
-            <img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="img/section-catalog/3.png" alt="">
+            <source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="<?php echo get_template_directory_uri(  ); ?>/assets/img/section-catalog/3.webp">
+            <img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="<?php echo get_template_directory_uri(  ); ?>/assets/img/section-catalog/3.png" alt="">
           </picture>
           <div class="product__content">
             <h3 class="product__title">Ветчина-грибы</h3>
@@ -191,8 +197,8 @@
       <div class="catalog__item" data-category="cheese">
         <div class="product catalog__product">
           <picture>
-            <source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="img/section-catalog/4.webp">
-            <img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="img/section-catalog/4.png" alt="">
+            <source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="<?php echo get_template_directory_uri(  ); ?>/assets/img/section-catalog/4.webp">
+            <img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="<?php echo get_template_directory_uri(  ); ?>/assets/img/section-catalog/4.png" alt="">
           </picture>
           <div class="product__content">
             <h3 class="product__title">Карбонара</h3>
@@ -217,8 +223,8 @@
       <div class="catalog__item" data-category="cheese">
         <div class="product catalog__product">
           <picture>
-            <source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="img/section-catalog/5.webp">
-            <img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="img/section-catalog/5.png" alt="">
+            <source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="<?php echo get_template_directory_uri(  ); ?>/assets/img/section-catalog/5.webp">
+            <img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="<?php echo get_template_directory_uri(  ); ?>/assets/img/section-catalog/5.png" alt="">
           </picture>
           <div class="product__content">
             <h3 class="product__title">Фирменная</h3>
@@ -243,8 +249,8 @@
       <div class="catalog__item" data-category="meat">
         <div class="product catalog__product">
           <picture>
-            <source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="img/section-catalog/6.webp">
-            <img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="img/section-catalog/6.png" alt="">
+            <source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="<?php echo get_template_directory_uri(  ); ?>/assets/img/section-catalog/6.webp">
+            <img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="<?php echo get_template_directory_uri(  ); ?>/assets/img/section-catalog/6.png" alt="">
           </picture>
           <div class="product__content">
             <h3 class="product__title">Ассорти</h3>
@@ -270,8 +276,8 @@
       <div class="catalog__item" data-category="mushrooms">
         <div class="product catalog__product">
           <picture>
-            <source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="img/section-catalog/7.webp">
-            <img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="img/section-catalog/7.png" alt="">
+            <source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="<?php echo get_template_directory_uri(  ); ?>/assets/img/section-catalog/7.webp">
+            <img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="<?php echo get_template_directory_uri(  ); ?>/assets/img/section-catalog/7.png" alt="">
           </picture>
           <div class="product__content">
             <h3 class="product__title">Л-01</h3>
@@ -297,8 +303,8 @@
       <div class="catalog__item" data-category="mushrooms">
         <div class="product catalog__product">
           <picture>
-            <source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="img/section-catalog/8.webp">
-            <img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="img/section-catalog/8.png" alt="">
+            <source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="<?php echo get_template_directory_uri(  ); ?>/assets/img/section-catalog/8.webp">
+            <img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="<?php echo get_template_directory_uri(  ); ?>/assets/img/section-catalog/8.png" alt="">
           </picture>
           <div class="product__content">
             <h3 class="product__title">Три сыра</h3>
@@ -323,8 +329,8 @@
       <div class="catalog__item" data-category="mushrooms">
         <div class="product catalog__product">
           <picture>
-            <source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="img/section-catalog/9.webp">
-            <img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="img/section-catalog/9.png" alt="">
+            <source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="<?php echo get_template_directory_uri(  ); ?>/assets/img/section-catalog/9.webp">
+            <img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="<?php echo get_template_directory_uri(  ); ?>/assets/img/section-catalog/9.png" alt="">
           </picture>
           <div class="product__content">
             <h3 class="product__title">Мясная</h3>
@@ -356,8 +362,8 @@
 <!-- section-about -->
 <section class="section section-about">
   <picture>
-    <source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="img/section-about/bg.webp">
-    <img class="section-about__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="img/section-about/bg.jpg" alt="">
+    <source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="<?php echo get_template_directory_uri(  ); ?>/assets/img/section-about/bg.webp">
+    <img class="section-about__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="<?php echo get_template_directory_uri(  ); ?>/assets/img/section-about/bg.jpg" alt="">
   </picture>
   <div class="container section-about__container">
     <div class="section-about__content">
@@ -372,7 +378,7 @@
 <!-- section-contacts -->
 <section class="section section-contacts">
   <div class="container section-contacts__container">
-    <div class="section-contacts__img lazy" data-src="img/section-contacts/tomatoes.webp" data-src-replace-webp="img/section-contacts/tomatoes.jpg"></div>
+    <div class="section-contacts__img lazy" data-src="<?php echo get_template_directory_uri(  ); ?>/assets/img/section-contacts/tomatoes.webp" data-src-replace-webp="img/section-contacts/tomatoes.jpg"></div>
     <header class="section__header">
       <h2 class="page-title sectoin-contacts__title">Контакты</h2>
     </header>
@@ -569,6 +575,6 @@
   <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
 
-  <script src="js/main.js"></script>
+  <script src="<?php echo get_template_directory_uri(  ); ?>/assets/js/main.js"></script>
 </body>
 </html>
