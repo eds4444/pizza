@@ -25,6 +25,23 @@ function site_scripts(){
     wp_enqueue_style('maine-style', get_stylesheet_uri( ), [], $version);
 
     wp_enqueue_script('focus-visible', 'https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js', [], $version, true);
+    wp_enqueue_script('lazy-load', 'https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js', [], $version, true);
+    wp_enqueue_script('main-js', get_template_directory_uri(  ) . '/assets/js/main.js', ['focus-visible', 'lazy-load'], $version, true);
+
+    wp_localize_script( 'main-js', 'WPJS', [
+        'siteUrl' => get_template_directory_uri(  ),
+          
+    ] );
     
+}
+
+add_action( 'init', 'create_global_variable' );//создание глобальных переменных, например для вывода acf полей номера тел в header и footer
+
+function create_global_variable(){
+    global $pizza_time;
+
+    $pizza_time = [
+        'phone' => get_field('phone'),
+    ];
 }
 

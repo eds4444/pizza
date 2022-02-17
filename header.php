@@ -22,11 +22,6 @@
 
   <title>PizzaTime — пицца в Москве от итальянского повара</title>
 
-  <script>
-    var WPJS = {};
-    WPJS.siteUrl = '<?php echo get_template_directory_uri(  ); ?>';
-  </script>
-
 <?php wp_head(  ); ?>
 
 </head>
@@ -38,7 +33,7 @@
   <div class="container header-page__container">
     <div class="header-page__start">
       <div class="logo">
-        <img class="logo__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="<?php echo get_template_directory_uri(  ); ?>/assets/img/common/logo.svg" alt="" width="127" height="21">
+        <img class="logo__img lazy" src="<?php wp_get_attachment_image_url( the_field('logo') )  ?>" alt="" width="127" height="21">
       </div>
     </div>
     <div class="header-page__end">
@@ -62,7 +57,7 @@
         </ul>
       </nav>
       <div class="phone">
-        <a class="phone__item header-page__phone" href="tel:+79999999999">+7 (999) 999-99-99</a>
+        <a class="phone__item header-page__phone" href="tel:+11111"><?php the_field('phone') ?></a>
       </div>
       <div class="header-page__hamburger">
         <button class="btn-menu" type="button" data-popup="popup-menu">
