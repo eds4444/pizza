@@ -21,7 +21,12 @@ Template Name: Главная
 <!-- /.section-top -->
 
 <?php
- print_r($GLOBALS['pizza_time']['phone']);
+
+ global $phone_var;
+ $phone_var = get_field('phone');
+ echo $phone_var; 
+
+ print_r($GLOBALS['pizza_time']);
 ?>
 
 <!-- section-catalog -->

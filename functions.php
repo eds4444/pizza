@@ -39,9 +39,10 @@ add_action( 'init', 'create_global_variable' );//создание глобаль
 
 function create_global_variable(){
     global $pizza_time;
+    $phone_var = the_field ('phone');
 
     $pizza_time = [
-        'phone' => get_field('phone'),
+        'phone' => $phone_var,
     ];
 }
 
