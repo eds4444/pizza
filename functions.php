@@ -38,11 +38,21 @@ function site_scripts(){
 add_action( 'init', 'create_global_variable' );//создание глобальных переменных, например для вывода acf полей номера тел в header и footer
 
 function create_global_variable(){
-    global $pizza_time;
-    $phone_var = the_field ('phone');
+    
+    global $pizza_time; 
+    
+    $par = $parfield;
 
     $pizza_time = [
-        'phone' => $phone_var,
+        'phone_arr' => $par,
     ];
 }
+
+if( function_exists('acf_add_options_page') ) {
+    
+    acf_add_options_page();
+    
+}
+
+
 

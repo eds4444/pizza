@@ -12,7 +12,7 @@ Template Name: Главная
 <section class="section-top lazy" data-src="<?php echo get_template_directory_uri(  ); ?>/assets/img/section-top/bg.webp" data-src-replace-webp="img/section-top/bg.jpg">
   <div class="container section-top__container">
     <p class="section-top__info">от итальянского повара</p>
-    <h1 class="section-top__title">Лучшая пицца в Москве</h1>
+    <h1 class="section-top__title">Лучшая пицца в Харькове</h1>
     <div class="section-top__btn">
       <button class="btn" type="button" data-scroll-to="section-catalog">Выбрать</button>
     </div>
@@ -22,11 +22,12 @@ Template Name: Главная
 
 <?php
 
- global $phone_var;
- $phone_var = get_field('phone');
- echo $phone_var; 
+ 
 
- print_r($GLOBALS['pizza_time']);
+ global $parfield;
+ $parfield = 123;
+  
+ print_r($GLOBALS['pizza_time']['phone_arr']);
 ?>
 
 <!-- section-catalog -->
@@ -330,12 +331,12 @@ Template Name: Главная
       <div class="contacts__end">
         <div class="contacts__item">
           <h3 class="contacts__title">Адрес</h3>
-          <p class="contacts__text">г. Москва, Преображенская площадь, 8</p>
+          <p class="contacts__text">г. Харьков</p>
         </div>
         <div class="contacts__item">
           <h3 class="contacts__title">Телефон</h3>
           <p class="contacts__text">
-            <a class="contacts__phone" href="tel:+79117112123">+7 (911) 711-21-23</a>
+            <a class="contacts__phone" href="tel:+79117112123"><?php the_field('phone') ?></a>
           </p>
         </div>
         <div class="contacts__item">

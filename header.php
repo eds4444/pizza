@@ -20,7 +20,7 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
-  <title>PizzaTime — пицца в Москве от итальянского повара</title>
+  <title>PizzaTime — пицца от итальянского повара</title>
 
 <?php wp_head(  ); ?>
 

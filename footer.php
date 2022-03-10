@@ -1,7 +1,7 @@
 <!-- footer-page -->
 <footer class="footer-page">
   <div class="container">
-    <div class="footer-page__text">PizzaTime 2020</div>
+    <div class="footer-page__text"><?php echo the_field('phone', 'option'); ?></div>    
   </div>
 </footer>
 <!-- /.footer-page -->
@@ -27,7 +27,7 @@
           </ul>
         </nav>
         <div class="phone popup__phone">
-          <a class="phone__item phone__item--accent" href="tel:+79999999999">+7 (999) 999-99-99</a>
+          <a class="phone__item phone__item--accent" href="tel:+79999999999">5555555555</a>
         </div>
         <ul class="socials">
           <li class="socials__item">
@@ -124,7 +124,7 @@
       <div class="popup__content">
         <button class="btn-close popup__btn-close popup-close"></button>
         <h2 class="page-title popup__title">Произошла ошибка</h2>
-        <p class="popup__subtitle">Пожалуйста, сделайте заказ по номеру <a class="popup__link" href="+79999999999">+7 (999) 999-99-99</a></p>
+        <p class="popup__subtitle">Пожалуйста, сделайте заказ по номеру <a class="popup__link" href="+79999999999"></a></p>
       </div>
     </div>
   </div>
